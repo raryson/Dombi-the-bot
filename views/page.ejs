@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Real Time Web Chat</title>
+        <script src="/chat.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <link type="text/css" href="style.css" rel="stylesheet" />
+        <link type="text/css" href="css\bootstrap.min.css" rel="stylesheet" />
+        <script src="jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div id="content">
+            </div>
+            <div class="controls">
+                    <div id="sendMessageDiv">
+                        <input type="text" id="field">
+                        <input type="button" id="send" value="Send">
+                    </div>
+                    <div id="nameDiv">
+                        <label>Say Your Name: <input type="text" id="name"> </label> <input type="button" value="Go" id="sendName">
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
