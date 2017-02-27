@@ -8,7 +8,7 @@ window.onload = function () {
   var userName = document.getElementById('name')
   var messageThings = document.getElementById('sendMessageDiv')
   var controlThings = document.getElementById('nameDiv')
-  var userNameValue; 
+  var userNameValue
 
   socket.on('message', function (data) {
     if (data.message) {
@@ -19,6 +19,8 @@ window.onload = function () {
         html += messages[i] + '<br />'
       }
       content.innerHTML = html
+      field.value = ''
+
     } else {
       console.log('There is a problem:', data)
     }

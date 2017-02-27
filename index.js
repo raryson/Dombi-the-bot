@@ -13,11 +13,8 @@ app.use(express.static(jqueryPath))
 app.set('view engine', 'ejs')
 
 
-app.get('/', function (req, res) {
-  res.render('page')
-})
-
-
+const routes = require('./routes/routes')
+app.use('/', routes)
 
 var io = require('socket.io').listen(app.listen(port))
 
